@@ -1,0 +1,28 @@
+name: Deploy Github pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - name: Install and Build
+      uses: oven-sh/setup-bun@v1
+      with:
+        bun-version: latest
+    - name: Install dependencies
+      run: bun install
+    - name: Build website
+      run: bun docusaurus build
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: bun install && bun run build
