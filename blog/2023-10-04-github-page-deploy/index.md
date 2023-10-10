@@ -30,4 +30,5 @@ Deployment failed! ❌
 直接在yml添加上權限就可以了
    ![截圖 2023-10-10 下午3.45.56.png](%E6%88%AA%E5%9C%96%202023-10-10%20%E4%B8%8B%E5%8D%883.45.56.png)
 # ref
-[【Git】workflows 部署 vuepress 错误“The process ‘/usr/bin/git‘ failed with exit code 128“_the process '/usr/bin/git' failed with exit code 1-CSDN博客](https://blog.csdn.net/weixin_42282187/article/details/124766382)
+* [【Git】workflows 部署 vuepress 错误“The process ‘/usr/bin/git‘ failed with exit code 128“_the process '/usr/bin/git' failed with exit code 1-CSDN博客](https://blog.csdn.net/weixin_42282187/article/details/124766382)
+* [管理个人访问令牌 - GitHub 文档](https://docs.github.com/zh/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
